@@ -1,0 +1,120 @@
+Negócio:
+1. Cafeteria
+2. Luderia
+3. Livraria
+4. Espaço
+- Mesma empresa
+- Cartão fidelidade
+- Login vale para todos os serviços
+- Compra física não é obrigatório registrar dados do cliente
+- Cliente fidelidade - desconto
+- Compra/aluguel online - Cadastro obrigatório
+- Avaliação e comentários só com compra verificada
+- Sistema único - módulos
+- Carrinho?????
+- Reserva de espaço - pagamento antecipado
+- Cancelamento em até 3 dias úteis
+- Comanda unificada para todo o bioma
+
+
+Requisitos Funcionais
+1 - Inserir Cadastro de Usuário
+2 - Alterar Cadastro de Usuário
+3 - Excluir Cadastro de Usuário
+4 - Exibir Cadastro de Usuário
+5 - Listar Cadastros de Usuário
+6 - Logar no Sistema
+7 - Sair do Sistema
+8 - Inserir Cadastro de Produto - Livraria
+9 - Alterar Cadastro de Produto - Livraria
+10 - Excluir Cadastro de Produto - Livraria  
+11 - Exibir Cadastro de Produto - Livraria
+12 - Listar Cadastros de Produtos - Livraria
+13 - Inserir Cadastro de Produto - Luderia
+14 - Alterar Cadastro de Produto - Luderia
+15 - Excluir Cadastro de Produto - Luderia  
+16 - Exibir Cadastro de Produto - Luderia
+17 - Listar Cadastros de Produtos - Luderia
+18 - Inserir Cadastro de Produto - Cafeteria
+19 - Alterar Cadastro de Produto - Cafeteria
+20 - Excluir Cadastro de Produto - Cafeteria
+21 - Exibir Cadastro de Produto - Cafeteria
+22 - Listar Cadastros de Produtos - Cafeteria
+23 - Inserir Cadastro de Agendamento de Espaço
+24 - Alterar Cadastro de Agendamento de Espaço
+25 - Excluir Cadastro de Agendamento de Espaço
+26 - Exibir Cadastro de Agendamento de Espaço
+27 - Listar Cadastros de Agendamentos de Espaços
+28 - Inserir Programação de Eventos - Livraria
+29 - Alterar Programação de Eventos - Livraria
+30 - Excluir Programação de Eventos - Livraria
+31 - Consultar Programação de Eventos - Livraria
+32 - Listar Programação de Eventos - Livraria
+33 - Inserir Programação de Eventos - Cafeteria
+34 - Alterar Programação de Eventos - Cafeteria
+35 - Excluir Programação de Eventos - Cafeteria
+36 - Consultar Programação de Eventos - Cafeteria
+37 - Listar Programação de Eventos - Cafeteria
+38 - Inserir Programação de Eventos - Luderia
+39 - Alterar Programação de Eventos - Luderia
+40 - Excluir Programação de Eventos - Luderia
+41 - Consultar Programação de Eventos - Luderia
+42 - Listar Programação de Eventos - Luderia
+43 - Inserir Avaliação de Serviços - Livraria
+44 - Consultar Avaliação de Serviços - Livraria
+45 - Listar Avaliações de Serviços - Livraria
+46 - Inserir Avaliação de Produto Comprado - Livraria
+47 - Consultar Avaliação de Produto Comprado - Livraria
+48 - Listar Avaliações de Produtos Comprados - Livraria
+49 - Inserir Avaliação de Serviços - Luderia
+50 - Consultar Avaliação de Serviços - Luderia
+51 - Listar Avaliações de Serviços - Luderia
+52 - Inserir Avaliação de Produto Comprado - Luderia
+53 - Consultar Avaliação de Produto Comprado - Luderia
+54 - Listar Avaliações de Produtos Comprados - Luderia
+55 - Inserir Avaliação de Serviços - Cafeteria
+56 - Consultar Avaliação de Serviços - Cafeteria
+57 - Listar Avaliações de Serviços - Cafeteria
+58 - Inserir Avaliação de Produto Comprado - Cafeteria
+59 - Consultar Avaliação de Produto Comprado - Cafeteria
+60 - Listar Avaliações de Produtos Comprados - Cafeteria
+61 - Inserir Avaliação de Serviços - Espaço de Eventos
+62 - Consultar Avaliação de Serviços - Espaço de Eventos
+63 - Listar Avaliações de Serviços - Espaço de Eventos
+64 - Inserir Comentário sobre Serviços - Livraria
+65 - Consultar Comentário sobre Serviços - Livraria
+66 - Listar Comentários sobre Serviços - Livraria
+67 - Inserir Comentário sobre Produto Comprado - Livraria
+68 - Consultar Comentário sobre Produto Comprado - Livraria
+69 - Listar Comentários sobre Produtos Comprados - Livraria
+70 - Inserir Comentário sobre Serviços - Luderia
+71 - Consultar Comentário sobre Serviços - Luderia
+72 - Listar Comentários sobre - Luderia
+73 - Inserir Comentário sobre Produto Comprado - Luderia
+74 - Consultar Comentário sobre Produto Comprado - Luderia
+75 - Listar Comentários sobre Produtos Comprados - Luderia
+76 - Inserir Comentário sobre Serviços - Cafeteria
+77 - Consultar Comentário sobre Serviços - Cafeteria
+78 - Listar Comentários sobre Serviços - Cafeteria
+79 - Inserir Comentário sobre Produto Comprado - Cafeteria
+80 - Consultar Comentário sobre Produto Comprado - Cafeteria
+81 - Listar Comentários sobre Produtos Comprados - Cafeteria
+82 - Inserir Comentário sobre Serviços - Espaço de Eventos
+83 - Consultar Comentário sobre Serviços - Espaço de Eventos
+84 - Listar Comentário sobre Serviços - Espaço de Eventos
+
+
+- Validar Comentário... (Compra verificada)
+- Validar Avaliação... (Compra verificada)
+- Lista de Desejo
+- Histórico de Comprar
+- Gerar/Enviar Nota Fiscal
+- Patrimônio???????
+- Aluguei um jogo e quero reservar o espaço?????
+
+Olhar com calma:
+- Pagamento
+- Carrinho
+- Entrega
+
+Análise de Requisitos (Funcionais) -> Diagrama de Casos de Uso -> Diagrama de Classes -> Diagrama de Atividades -> Prototipação

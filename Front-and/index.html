@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/IconBook.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="Javascript/javascript.js" defer></script>
+    <title>Book-Line</title>
+</head>
+<body>
+
+    <!--Abertura da Div top-head-->
+    <div class="top-head">
+        <div id="text-top">Tenha acesso a livros com ótima qualidade e preço acessível!</div>
+        <div class="options-top">
+        <div id="division-top"></div>
+        <div id="options">Anuncie aqui</div>
+        <div id="division-top"></div>
+
+        <div id="options">Saiba Mais</div>
+        <div id="division-top"></div>
+
+        <div id="options">Central de Ajuda</div>
+            <div id="question-box"><img src="img/question.png" style="width: 18px; height: 18px;"></div>
+        </div>
+
+    </div>
+    <!--Fim da Div top-head-->
+
+    <!--Abertura da Div mid-head-->
+    <div class="mid-head">
+        <!--Icone do site-->
+        <img class="icon-site" src="img/IconBook.png" width="70px" height="60px">
+        <!--Icone do site-->
+
+        <div class="option-search"><select class="select-search"><option>Livros</option><option>Autores</option><option>Livros</option></select></div>
+
+        <form class="search-container" style="height: 40px;">
+
+            <input type="text" id="search-bar" placeholder="Busca">
+            <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+          </form>
+          <div class="favoritos"><img src="img/heart.png" style="height: 24px; width: 24px;;"></div>
+          <p class="text-fav">Meus Favoritos</p>
+          <div class="user-profile"><img src="img/user.png" style="height: 24px; width: 24px; margin-bottom: 3px;"></div>
+          <a href="Cadastro.html"><p class="text-user" >Usuário</p></a>
+          <img src="img/right-arrow.png" id="arrow-user">
+          <div class="carrinho"><img src="img/cart-comp.png" style="height: 24px; width: 24px;;"></div>
+          
+    </div>
+    <!--Fim da Div mid-head-->
+
+    <!--Abertura da Div bottom-head-->
+    <div class="bottom-head">
+        <a href="#"><div class="menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div></a>
+    <ul class="nav-list">
+        <a href="#"><li>Menu</li></a>
+        <a href="index.html"><li>Home</li></a>
+        <a href="#"><li>Reservas</li></a>
+        <a href="#"><li>Cafeteria</li></a>
+        <a href="#"><li>Livros</li></a>
+        <a href="#"><li>Games</li></a>
+        <a href="file:///C:/Users/aluno/Downloads/Book-Line/Html/NovosEscritoresIndex.html"><li>Novos escritores</li></a>
+        <a href="#"><li>Assinaturas</li></a>
+    </ul>
+        
+    
+    </div>
+    <!--Fim da Div bottom-head-->
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/slider01.jpg" style="width:100%" height="450px">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/slider02.jpg" style="width:100%" height="450px" >
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/slider03.jpg" style="width:100%" height="450px">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+   <!-- Radio buttons for slides -->
+  
+
+  
+  <!--Inicio da Div options-web-->
+  <div id="options-web">
+  <div class="direction-option">
+    <img style="transform: scale(1); margin-left: 13px; margin-top: 12px;" src="img/Icon-Coffee.png">
+    
+    <div id="line-gray"></div>
+    <div class="text-option">
+        <p style="font-family: Kanit; font-size: 22px;">Cafeteria</p>
+        <p >Veja nosso cardápio!</p>
+    </div>
+  </div>
+  <div class="direction-option">
+    <img style="transform: scale(1); margin-left: 14px; margin-top: 20px;" src="img/Icon-livraria.png">
+    
+    <div id="line-gray"></div>
+    <div class="text-option">
+        <p style="font-family: Kanit; font-size: 22px;">Livraria</p>
+        <p >Curta um lazer diário!</p>
+    </div>
+    </div>
+  <div class="direction-option">
+    <img style="margin-left: -3px; margin-top: 3px;"src="img/Icon-Reserva.png">
+    
+    <div id="line-gray"></div>
+    <div class="text-option">
+        <p style="font-family: Kanit; font-size: 22px;">Reservas</p>
+        <p >Faça reuniões com conforto!</p>
+    </div>
+  </div>
+  <div class="direction-option">
+    <img style="margin-left: 6px; margin-top: 19px;" src="img/Icon-games.png">
+    
+    <div id="line-gray"></div>
+    <div class="text-option">
+        <p style="font-family: Kanit; font-size: 22px;">Jogos</p>
+        <p >Board e Card games!</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <!--Fim da Div options-web-->
+  <br>
+  
+  <div class="line-green"></div>
+  <div id="division-product">Livros mais Vendidos</div>
+    <!-- Abertura da DIV carrosel-produtos -->
+     <div class="carrosel-produtos">
+        <button id="prev-button01"><img src="img/right-arrow.png"></button>
+
+        <!--Fim da div slider-->
+        
+        <div class="slider01 on-01">
+            <div class="section-product">Seção: 01 - 02</div>
+            <div class="product-line">
+
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Extraordinario.jpg"></div>
+            <p id="name-product">Extraordinário</p>
+            <div class="content">
+                <del><p id="value-del">R$ 59,90</p></del>
+                    <p id="value-atual">R$ 44,92</p>
+                    <p class="juros">1X de 44,92 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/DomCasmurro.jpg"></div>
+            <p id="name-product">Dom Casmurro</p>
+            <div class="content">
+                <del><p id="value-del">R$ 24,90</p></del>
+                    <p id="value-atual">R$ 16,68</p>
+                    <p class="juros">2X de 8,64 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 7 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+        <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Verify.jpg"></div>
+            <p id="name-product">Verify</p>
+            <div class="content">
+                <del><p id="value-del">R$ 59,90</p></del>
+                    <p id="value-atual">R$ 41,30</p>
+                    <p class="juros">5X de 8,26 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 3 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+             
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/ManBabilonia.jpg"></div>
+            <p id="name-product">O homem mais rico da Babilônia</p>
+            <div class="content">
+                <del><p id="value-del">R$ 34,90</p></del>
+                    <p id="value-atual">R$ 21,90</p>
+                    <p class="juros">3X de 7,30 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/SintaoMedo.jpg"></div>
+            <p id="name-product">Edgar Allan Poe - Medo Clássico: Sin...</p>
+            <div class="content">
+                <del><p id="value-del">R$ 84,90</p></del>
+                    <p id="value-atual">R$ 72,00</p>
+                    <p class="juros">3X de 24,00 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+        </div></div>
+             <!-- Fim da DIV slider -->
+             <div class="slider01">
+                <div class="section-product">Seção: 02 - 02</div>
+                <div class="product-line">
+    
+                 <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/NaoSeiSentir.jpg"></div>
+            <p id="name-product">Desculpe o exagero, mas não sei sentir...</p>
+            <div class="content">
+                <del><p id="none-promotion">.</p></del>
+                    <p id="value-atual">R$ 36,96</p>
+                    <p class="juros">3X de 12,32 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+    
+                  <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Odisseia.jpg"></div>
+            <p id="name-product">Odisseia</p>
+            <div class="content">
+                <del><p id="value-del">R$ 69,90</p></del>
+                    <p id="value-atual">R$ 43,68</p>
+                    <p class="juros">1X de 43,68 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+    
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/DivinaCom.jpg"></div>
+            <p id="name-product">A Divina Comédia</p>
+            <div class="content">
+                <del><p id="value-del">R$ 169,90</p></del>
+                    <p id="value-atual">R$ 50,00</p>
+                    <p class="juros">2X de 25,00 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 9 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+                 
+                  <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/AssimQue.jpg"></div>
+            <p id="name-product">É Assim que Acaba:1</p>
+            <div class="content">
+                <del><p id="value-del">59,90</p></del>
+                    <p id="value-atual">R$ 26,99</p>
+                    <p class="juros">3X de 12,32 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,6 - <a href="#">( 8 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+                  <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/7Ps.jpg"></div>
+            <p id="name-product">Os 7Ps da Empresarização </p>
+            <div class="content">
+                <del><p id="value-del">R$ 100,00</p></del>
+                    <p id="value-atual">R$ 59,90</p>
+                    <p class="juros">5X de 11,98 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+            </div></div>
+                 <!-- Fim da DIV slider -->
+                  
+            <button id="next-button01"><img src="img/right-arrow.png"></button>
+           
+            
+     
+
+     
+
+</div>
+
+    <!-- Fim da DIV carrosel-produtos -->
+<div class="division"></div>
+    <!--Inicio da div historico-produtos-->
+    <div class="historico-produtos">
+        <div id="historic-section">Vistos recentemente</div>
+
+    </div>
+    <!--Fim da div historico-produtos-->
+    
+    <div id="division-product">Lançamentos de jogos</div>
+    <!-- Abertura da DIV carrosel-produtos -->
+     <div class="carrosel-produtos">
+        <button id="prev-button02"><img src="img/right-arrow.png"></button>
+
+        <!--Fim da div slider-->
+        
+        <div class="slider02 on-02">
+            <div class="section-product">Seção: 01 - 02</div>
+            <div class="product-line">
+
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/DeD.png"></div>
+            <p id="name-product">Dungeons & Dragons: Maravil...</p>
+            <div class="content">
+                <del><p id="value-del">R$ 279,90</p></del>
+                    <p id="value-atual">R$ 259,90</p>
+                    <p class="juros">7x de 37,13 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Sanatorio.png"></div>
+            <p id="name-product">Fuga do Sanatório Moreau</p>
+            <div class="content">
+                <del><p id="none-promotion">.</p></del>
+                    <p id="value-atual">R$ 499,90</p>
+                    <p class="juros">12x de 41,66 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 7 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+        <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/ContHuman.png"></div>
+            <p id="name-product">Cartas contra Humanidade</p>
+            <div class="content">
+                <del><p id="value-del">R$ 185,90</p></del>
+                    <p id="value-atual">R$ 119,90</p>
+                    <p class="juros">2X de 59,90 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 3 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+             
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/TheMind.png"></div>
+            <p id="name-product">The Mind Extreme</p>
+            <div class="content">
+                <del><p id="none-promotion">.</p></del>
+                    <p id="value-atual">R$ 69,90</p>
+                    <p class="juros">1X de 69,90 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/CatBox.png"></div>
+            <p id="name-product">Cat in The Box</p>
+            <div class="content">
+                <del><p id="none-promotion">.</p></del>
+                    <p id="value-atual">R$ 179,90</p>
+                    <p class="juros">3X de 59,97 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+        </div></div>
+             <!-- Fim da DIV slider -->
+             <div class="slider02">
+                <div class="section-product">Seção: 02 - 02</div>
+                <div class="product-line">
+    
+                 <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/DeD.png"></div>
+            <p id="name-product">Dungeons & Dragons: Maravilhas Além</p>
+            <div class="content">
+                <del><p id="value-del">R$ 279,90</p></del>
+                    <p id="value-atual">R$ 259,90</p>
+                    <p class="juros">3X de 12,32 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+    
+                  <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Odisseia.jpg"></div>
+            <p id="name-product">Odisseia</p>
+            <div class="content">
+                <del><p id="value-del">R$ 69,90</p></del>
+                    <p id="value-atual">R$ 43,68</p>
+                    <p class="juros">1X de 43,68 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+    
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/DivinaCom.jpg"></div>
+            <p id="name-product">A Divina Comédia</p>
+            <div class="content">
+                <del><p id="value-del">R$ 169,90</p></del>
+                    <p id="value-atual">R$ 50,00</p>
+                    <p class="juros">2X de 25,00 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 9 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+                 
+                  <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/AssimQue.jpg"></div>
+            <p id="name-product">É Assim que Acaba:1</p>
+            <div class="content">
+                <del><p id="value-del">59,90</p></del>
+                    <p id="value-atual">R$ 26,99</p>
+                    <p class="juros">3X de 12,32 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,6 - <a href="#">( 8 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+                  <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/7Ps.jpg"></div>
+            <p id="name-product">Os 7Ps da Empresarização </p>
+            <div class="content">
+                <del><p id="value-del">R$ 100,00</p></del>
+                    <p id="value-atual">R$ 59,90</p>
+                    <p class="juros">5X de 11,98 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+            </div></div>
+                 <!-- Fim da DIV slider -->
+                  
+            <button id="next-button02"><img src="img/right-arrow.png"></button>
+           
+            
+     
+
+     
+
+</div>
+
+    <!-- Fim da DIV carrosel-produtos -->
+
+    <div class="division"></div>
+    
+    <div id="division-product">Livros em promoção</div>
+    <!-- Abertura da DIV carrosel-produtos -->
+     <div class="carrosel-produtos">
+        <button id="prev-button03"><img src="img/right-arrow.png"></button>
+
+        <!--Fim da div slider-->
+        
+        <div class="slider03 on-03">
+            <div class="section-product">Seção: 01 - 02</div>
+            <div class="product-line">
+
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/VadeMecum.png"></div>
+            <p id="name-product">Vade Mecum Saraiva...</p>
+            <div class="content">
+                <del><p id="value-del">R$ 273,90</p></del>
+                    <p id="value-atual">R$ 136,90</p>
+                    <p class="juros">1x de 136,90 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Descobriu.png"></div>
+            <p id="name-product">O menino que descobriu...</p>
+            <div class="content">
+                <del><p id="value-del">29,90</p></del>
+                    <p id="value-atual">R$ 21,50</p>
+                    <p class="juros">3x de 7,17 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 7 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+        <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Ansiedade.png"></div>
+            <p id="name-product">Ansiedade: como enfrentar...</p>
+            <div class="content">
+                <del><p id="value-del">R$ 34,90</p></del>
+                    <p id="value-atual">R$ 12,50</p>
+                    <p class="juros">5X de 2,50 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 3 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+             
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Babilonia.png"></div>
+            <p id="name-product">O homem mais rico da Babilônia</p>
+            <div class="content">
+                <del><p id="value-del">R$ 81,00</p></del>
+                    <p id="value-atual">R$ 40,50</p>
+                    <p class="juros">2X de 20,25 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/SabeEstu.png"></div>
+            <p id="name-product">Você sabe estudar?</p>
+            <div class="content">
+                <del><p id="value-del">R$ 273,90</p></del>
+                    <p id="value-atual">R$ 136,99</p>
+                    <p class="juros">4X de 34,25 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+        </div></div>
+             <!-- Fim da DIV slider -->
+             <div class="slider03">
+                <div class="section-product">Seção: 02 - 02</div>
+                <div class="product-line">
+    
+                 <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/DeD.png"></div>
+            <p id="name-product">Dungeons & Dragons: Maravilhas Além</p>
+            <div class="content">
+                <del><p id="value-del">R$ 279,90</p></del>
+                    <p id="value-atual">R$ 259,90</p>
+                    <p class="juros">3X de 12,32 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+    
+                  <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Odisseia.jpg"></div>
+            <p id="name-product">Odisseia</p>
+            <div class="content">
+                <del><p id="value-del">R$ 69,90</p></del>
+                    <p id="value-atual">R$ 43,68</p>
+                    <p class="juros">1X de 43,68 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+    
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/DivinaCom.jpg"></div>
+            <p id="name-product">A Divina Comédia</p>
+            <div class="content">
+                <del><p id="value-del">R$ 169,90</p></del>
+                    <p id="value-atual">R$ 50,00</p>
+                    <p class="juros">2X de 25,00 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,7 - <a href="#">( 9 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+                 
+                  <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/AssimQue.jpg"></div>
+            <p id="name-product">É Assim que Acaba:1</p>
+            <div class="content">
+                <del><p id="value-del">59,90</p></del>
+                    <p id="value-atual">R$ 26,99</p>
+                    <p class="juros">3X de 12,32 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,6 - <a href="#">( 8 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+
+                  <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/7Ps.jpg"></div>
+            <p id="name-product">Os 7Ps da Empresarização </p>
+            <div class="content">
+                <del><p id="value-del">R$ 100,00</p></del>
+                    <p id="value-atual">R$ 59,90</p>
+                    <p class="juros">5X de 11,98 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+            </div></div>
+                 <!-- Fim da DIV slider -->
+                  
+            <button id="next-button03"><img src="img/right-arrow.png"></button>
+           
+            
+     
+
+     
+
+</div>
+
+    <!-- Fim da DIV carrosel-produtos -->
+    <div class="line-green" style="margin-top: 270px;"></div>
+
+<!--Inicio da Div assinatura-box-->
+<div class="assinatura-box">
+    <img id="icon-assinatura" src="img/IconBook.png">
+
+    <img id="back-chest" src="img/back-chest .png">
+    <img id="chest"src="img/chest.png">
+    <div id="title-assinatura">Assinatura Wisdom Wings</div>
+    
+    <div id="sub-assinatura">Não fique sem recompensas!</div>
+    
+    <div class="organiza-assinatura">
+    <img id="ball-green" src="img/ball-green.png">
+    <div id="text-assinatura">Ganhe um camisa, copo e boné da Book-line;</div>
+    </div>
+
+    <div class="organiza-assinatura">
+    <img id="ball-green" src="img/ball-green.png">
+    <div id="text-assinatura">Receba livros mensalmente!</div>
+    </div>
+
+    <a href="#"><div id="value-assinatura">Por apenas R$ 159,90</div></a>
+    <a href="#"><div id="sobre-assinatura">Saiba mais</div></a>
+</div>
+<!--Fim da Div assinatura-box-->
+    <div class="line-green"></div>
+    <div class="collection-produtos">
+        <div id="division-product">Literatura brasileira</div>
+        <div class="organiza-divisao">
+    <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/MeuQuintal.png"></div>
+            <p id="name-product">O Meu Quintal é Maior... </p>
+            <div class="content">
+                <del><p id="none-promotion">.</p></del>
+                    <p id="value-atual">R$ 64,90</p>
+                    <p class="juros">2X de 32,45 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/IdeiasAdiar.png"></div>
+            <p id="name-product">Ideias para Adiar o Fim... </p>
+            <div class="content">
+                <del><p id="none-promotion">.</p></del>
+                    <p id="value-atual">R$ 18,99</p>
+                    <p class="juros">1X de 18,99 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/MemoPostu.png"></div>
+            <p id="name-product">Memórias Póstumas de Brás...</p>
+            <div class="content">
+                <del><p id="none-promotion">.</p></del>
+                    <p id="value-atual">R$ 59,90</p>
+                    <p class="juros">5X de 19,92 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Iracema.png"></div>
+            <p id="name-product">Iracema</p>
+            <div class="content">
+                <del><p id="value-del">R$ 23,90</p></del>
+                    <p id="value-atual">R$ 13,33</p>
+                    <p class="juros">1X de 13,33 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Sertoes.png"></div>
+            <p id="name-product">Os Sertões</p>
+            <div class="content">
+                <del><p id="none-promotion">.</p></del>
+                    <p id="value-atual">R$ 26,49</p>
+                    <p class="juros">3X de 8,84 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+             <!-- Abertura da DIV produto -->
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Avesso.png"></div>
+            <p id="name-product">O Avesso da Pele</p>
+            <div class="content">
+                <del><p id="value-del">R$ 19,90</p></del>
+                    <p id="value-atual">R$ 11,95</p>
+                    <p class="juros">1X de 11,95 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Capitaes.png"></div>
+            <p id="name-product">Capitães da Areia</p>
+            <div class="content">
+                <del><p id="none-promotion">.</p></del>
+                    <p id="value-atual">R$ 14,99</p>
+                    <p class="juros">2X de 7,50 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/VidasSecas.png"></div>
+            <p id="name-product">Vida Secas - Oficial </p>
+            <div class="content">
+                <del><p id="none-promotion">.</p></del>
+                    <p id="value-atual">39,48</p>
+                    <p class="juros">3X de 39,48 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/HistConcisa.png"></div>
+            <p id="name-product">História Concisa da Literatura...</p>
+            <div class="content">
+                <del><p id="value-del">R$ 22,90</p></del>
+                    <p id="value-atual">R$ 13,90</p>
+                    <p class="juros">1X de 13,90 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+        <div class="produto">
+            <div id="capa-content"><img width="140" height="200" src="img/Heroinanegra.png"></div>
+            <p id="name-product">Heroinas Negras Brasileiras</p>
+            <div class="content">
+                <del><p id="value-del">R$ 69,90</p></del>
+                    <p id="value-atual">R$ 49,89</p>
+                    <p class="juros">3X de 16,63 sem juros.</p>
+                        <div class="aval">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                            <img src="img/Star-amal.png">
+                                <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                        </div>
+                            <a href="#"><div class="sobre-product">
+                                <img id="cart-sobre" src="img/cart.png">
+                                ADICIONAR
+                            </div>
+                            </a>
+                        </div>
+        </div>
+            <!-- Fim da DIV produto -->
+             <div class="button-literatura" ><a href="">VEJA TODOS OS LIVROS DA LITERATURA BRASILEIRA</a></div>
+    </div>
+
+        </div>
+        <div class="line-green"></div>
+        
+        <div id="division-product">Jogos de Cartas mais vendidos</div>
+            <!-- Abertura da DIV carrosel-produtos -->
+             <div class="carrosel-produtos">
+                <button id="prev-button04"><img src="img/right-arrow.png"></button>
+        
+                <!--Fim da div slider-->
+                
+                <div class="slider04 on-04">
+                    <div class="section-product">Seção: 01 - 02</div>
+                    <div class="product-line">
+        
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/SenhorAneis.png"></div>
+                    <p id="name-product">O Senhor dos Anéis Card</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 499,90</p></del>
+                            <p id="value-atual">R$ 274,94</p>
+                            <p class="juros">1x de 274,94 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/ArkhamHorror.png"></div>
+                    <p id="name-product">Arkham Horror - A Era...</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 499,90</p></del>
+                            <p id="value-atual">R$ 215,93</p>
+                            <p class="juros">11X de 19,63 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 7 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/Exploding.png"></div>
+                    <p id="name-product">Exploding Kittens Bem vs Mal...</p>
+                    <div class="content">
+                        <del><p id="none-promotion">.</p></del>
+                            <p id="value-atual">R$ 119,88</p>
+                            <p class="juros">1X de 119,88 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 3 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                     
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/LoiraBanhe.png"></div>
+                    <p id="name-product">Loira do Banheiro Jogo de Cartas...</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 39,88</p></del>
+                            <p id="value-atual">R$ 33,90</p>
+                            <p class="juros">3X de 11,30 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/Samoa.png"></div>
+                    <p id="name-product">Samoa Devir BGSAMEE</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 89,88</p></del>
+                            <p id="value-atual">R$ 74,88</p>
+                            <p class="juros">2X de 37,44 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                </div></div>
+                     <!-- Fim da DIV slider -->
+                     <div class="slider04">
+                        <div class="section-product">Seção: 02 - 02</div>
+                        <div class="product-line">
+            
+                         <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/DeD.png"></div>
+                    <p id="name-product">Dungeons & Dragons: Maravilhas Além</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 279,90</p></del>
+                            <p id="value-atual">R$ 259,90</p>
+                            <p class="juros">3X de 12,32 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+            
+                          <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/Odisseia.jpg"></div>
+                    <p id="name-product">Odisseia</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 69,90</p></del>
+                            <p id="value-atual">R$ 43,68</p>
+                            <p class="juros">1X de 43,68 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+            
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/DivinaCom.jpg"></div>
+                    <p id="name-product">A Divina Comédia</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 169,90</p></del>
+                            <p id="value-atual">R$ 50,00</p>
+                            <p class="juros">2X de 25,00 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 9 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                         
+                          <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/AssimQue.jpg"></div>
+                    <p id="name-product">É Assim que Acaba:1</p>
+                    <div class="content">
+                        <del><p id="value-del">59,90</p></del>
+                            <p id="value-atual">R$ 26,99</p>
+                            <p class="juros">3X de 12,32 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,6 - <a href="#">( 8 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                          <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/7Ps.jpg"></div>
+                    <p id="name-product">Os 7Ps da Empresarização </p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 100,00</p></del>
+                            <p id="value-atual">R$ 59,90</p>
+                            <p class="juros">5X de 11,98 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                    </div></div>
+                         <!-- Fim da DIV slider -->
+                          
+                    <button id="next-button04"><img src="img/right-arrow.png"></button>
+                   
+                    
+             
+        
+             
+        
+        </div>
+        
+        <div class="division"></div>
+        
+        <div id="division-product">Livros de novos escritores</div>
+            <!-- Abertura da DIV carrosel-produtos -->
+             <div class="carrosel-produtos">
+                <button id="prev-button05"><img src="img/right-arrow.png"></button>
+        
+                <!--Fim da div slider-->
+                
+                <div class="slider05 on-05">
+                    <div class="section-product">Seção: 01 - 02</div>
+                    <div class="product-line">
+        
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/Dandara.png"></div>
+                    <p id="name-product">As Lendas de Dandara</p>
+                    <div class="content">
+                        <del><p id="none-promotion">.</p></del>
+                            <p id="value-atual">R$ 89,88</p>
+                            <p class="juros">1x de 89,88 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/Vantagens.png"></div>
+                    <p id="name-product">As Vantagens De Ser Você</p>
+                    <div class="content">
+                        <del><p id="none-promotion">.</p></del>
+                            <p id="value-atual">R$ 47,98</p>
+                            <p class="juros">2X de 23,99 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 7 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/QuinzeDias.png"></div>
+                    <p id="name-product">Quinze Dias</p>
+                    <div class="content">
+                        <del><p id="none-promotion">.</p></del>
+                            <p id="value-atual">R$ 21,99</p>
+                            <p class="juros">3X de 7,33 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 3 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                     
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/Capivaras.png"></div>
+                    <p id="name-product">Enfim, capivaras</p>
+                    <div class="content">
+                        <del><p id="none-promotion">.</p></del>
+                            <p id="value-atual">R$ 33,90</p>
+                            <p class="juros">3X de 11,30 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/Cancun.png"></div>
+                    <p id="name-product">Cancún</p>
+                    <div class="content">
+                        <del><p id="none-promotion">.</p></del>
+                            <p id="value-atual">R$ 13,99</p>
+                            <p class="juros">1X de 13,99 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                </div></div>
+                     <!-- Fim da DIV slider -->
+                     <div class="slider05">
+                        <div class="section-product">Seção: 02 - 02</div>
+                        <div class="product-line">
+            
+                         <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/DeD.png"></div>
+                    <p id="name-product">Dungeons & Dragons: Maravilhas Além</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 279,90</p></del>
+                            <p id="value-atual">R$ 259,90</p>
+                            <p class="juros">3X de 12,32 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+            
+                          <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/Odisseia.jpg"></div>
+                    <p id="name-product">Odisseia</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 69,90</p></del>
+                            <p id="value-atual">R$ 43,68</p>
+                            <p class="juros">1X de 43,68 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+            
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/DivinaCom.jpg"></div>
+                    <p id="name-product">A Divina Comédia</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 169,90</p></del>
+                            <p id="value-atual">R$ 50,00</p>
+                            <p class="juros">2X de 25,00 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 9 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                         
+                          <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/AssimQue.jpg"></div>
+                    <p id="name-product">É Assim que Acaba:1</p>
+                    <div class="content">
+                        <del><p id="value-del">59,90</p></del>
+                            <p id="value-atual">R$ 26,99</p>
+                            <p class="juros">3X de 12,32 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,6 - <a href="#">( 8 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                          <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/7Ps.jpg"></div>
+                    <p id="name-product">Os 7Ps da Empresarização </p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 100,00</p></del>
+                            <p id="value-atual">R$ 59,90</p>
+                            <p class="juros">5X de 11,98 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                    </div></div>
+                         <!-- Fim da DIV slider -->
+                          
+                    <button id="next-button05"><img src="img/right-arrow.png"></button>
+                   
+                    
+             
+        
+             
+        
+        </div>
+            
+        <div class="division"></div>
+        
+        <div id="division-product">Livros de Filosofia</div>
+            <!-- Abertura da DIV carrosel-produtos -->
+             <div class="carrosel-produtos">
+                <button id="prev-button06"><img src="img/right-arrow.png"></button>
+        
+                <!--Fim da div slider-->
+                
+                <div class="slider06 on-06">
+                    <div class="section-product">Seção: 01 - 02</div>
+                    <div class="product-line">
+        
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/MitoCaverna.png"></div>
+                    <p id="name-product">As Lendas de Dandara</p>
+                    <div class="content">
+                        <del><p id="none-promotion">.</p></del>
+                            <p id="value-atual">R$ 89,88</p>
+                            <p class="juros">1x de 89,88 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/HistFiloso.png"></div>
+                    <p id="name-product">As Vantagens De Ser Você</p>
+                    <div class="content">
+                        <del><p id="none-promotion">.</p></del>
+                            <p id="value-atual">R$ 47,98</p>
+                            <p class="juros">2X de 23,99 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 7 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/AparelhosIde.png"></div>
+                    <p id="name-product">Quinze Dias</p>
+                    <div class="content">
+                        <del><p id="none-promotion">.</p></del>
+                            <p id="value-atual">R$ 21,99</p>
+                            <p class="juros">3X de 7,33 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 3 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                     
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/DoresMundo.png"></div>
+                    <p id="name-product">Enfim, capivaras</p>
+                    <div class="content">
+                        <del><p id="none-promotion">.</p></del>
+                            <p id="value-atual">R$ 33,90</p>
+                            <p class="juros">3X de 11,30 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/Nietzche.png"></div>
+                    <p id="name-product">Cancún</p>
+                    <div class="content">
+                        <del><p id="none-promotion">.</p></del>
+                            <p id="value-atual">R$ 13,99</p>
+                            <p class="juros">1X de 13,99 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                </div></div>
+                     <!-- Fim da DIV slider -->
+                     <div class="slider06">
+                        <div class="section-product">Seção: 02 - 02</div>
+                        <div class="product-line">
+            
+                         <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/DeD.png"></div>
+                    <p id="name-product">Dungeons & Dragons: Maravilhas Além</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 279,90</p></del>
+                            <p id="value-atual">R$ 259,90</p>
+                            <p class="juros">3X de 12,32 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+            
+                          <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/Odisseia.jpg"></div>
+                    <p id="name-product">Odisseia</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 69,90</p></del>
+                            <p id="value-atual">R$ 43,68</p>
+                            <p class="juros">1X de 43,68 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 5 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+            
+                     <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/DivinaCom.jpg"></div>
+                    <p id="name-product">A Divina Comédia</p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 169,90</p></del>
+                            <p id="value-atual">R$ 50,00</p>
+                            <p class="juros">2X de 25,00 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,7 - <a href="#">( 9 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                         
+                          <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/AssimQue.jpg"></div>
+                    <p id="name-product">É Assim que Acaba:1</p>
+                    <div class="content">
+                        <del><p id="value-del">59,90</p></del>
+                            <p id="value-atual">R$ 26,99</p>
+                            <p class="juros">3X de 12,32 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,6 - <a href="#">( 8 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+        
+                          <!-- Abertura da DIV produto -->
+                <div class="produto">
+                    <div id="capa-content"><img width="140" height="200" src="img/7Ps.jpg"></div>
+                    <p id="name-product">Os 7Ps da Empresarização </p>
+                    <div class="content">
+                        <del><p id="value-del">R$ 100,00</p></del>
+                            <p id="value-atual">R$ 59,90</p>
+                            <p class="juros">5X de 11,98 sem juros.</p>
+                                <div class="aval">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                    <img src="img/Star-amal.png">
+                                        <div class="nota">4,9 - <a href="#">( 22 )</a></div>
+                                </div>
+                                    <a href="#"><div class="sobre-product">
+                                        <img id="cart-sobre" src="img/cart.png">
+                                        ADICIONAR
+                                    </div>
+                                    </a>
+                                </div>
+                </div>
+                    <!-- Fim da DIV produto -->
+                    </div></div>
+                         <!-- Fim da DIV slider -->
+                          
+                    <button id="next-button06"><img src="img/right-arrow.png"></button>
+                   
+                    
+             
+        
+             
+        
+        </div>
+        <div class="division"></div>
+
+        <!--Inicio da Div rodape-->
+        <div class="rodape">
+
+        <!--Inicio da Div top-rodape-->
+            <div class="top-rodape">
+            <div id="scrollButton">
+            <p >Retornar ao topo</p>
+            <img  src="img/right-arrow.png">
+            </div>
+            </div>
+            <!--Fim da Div top-rodape-->
+
+
+            <!--Inicio da Div mid-rodape-->
+            <div class="mid-rodape">
+            <!--Inicio da Div locale-pages-->
+                <div class="locale-pages"><img class="img-exterior" src="img/Exterior.png"><img class="arrow-exterior"src="img/right-arrow.png">Página Inicial</div>
+            <!--Fim da Div locale-pages-->
+
+            <!--Inicio da Div contacts-rodape-->
+                <div class="contacts-rodape">
+                    <div class="block-rodape">
+                    <p class="Contato-text" style="font-family: Kanit;">Contatos</p>
+                    <div id="line-contact"></div>
+                    <li>Endereço: 69907-677</li>
+                    <li>Telefone: (68) 99940-0828</li>
+                    <li>Email: booklineofc@gmail.com</li>
+                    </div>
+
+
+                    <div class="block-rodape">
+                    <p class="Contato-text" style="font-family: Kanit;">Navegue pelo Site</p>
+                    <div id="line-contact"></div>
+                    <li>Página inicial</li>
+                    <li>Livraria</li>
+                    <li>Board e Card Games</li>
+                    <li>Sobre nós</li>
+
+                    </div>
+
+
+                    <div class="block-rodape">
+                    <p class="Contato-text" style="font-family: Kanit;">Dúvida/Ajuda</p>
+                    <div id="line-contact"></div>
+                    <li>Central de Ajuda</li>
+                    <li>Devoluções</li>
+                    <li>Termos de serviço</li>
+                    <li>Segurança e privacidade</li>
+                    <li>Política de privacidade</li>
+                    </div>
+
+                    <div class="block-rodape">
+                        <p class="Contato-text" style="font-family: Kanit;">Dúvida/Ajuda</p>
+                        <div id="line-contact"></div>
+                        <img src="img/Instagram_icon.png">
+                        <img src="img/facebook.png">
+                        <img src="img/twitter.png">
+                        <img src="img/tiktok.png">
+                        <p class="Contato-text" style="font-family: Kanit;">Formas de pagamento</p>
+                        <div id="line-contact"></div>
+                        <img class="bank" src="img/Inter.png">
+                        <img class="bank" src="img/Nubank.png">
+                        <img class="bank" src="img/Visa.png">
+                        <img class="bank" src="img/BancoBR.png">
+                        <br>
+                        <img class="bank" src="img/Santander.png">
+                        <img class="bank" src="img/Itau.png">
+                        <img class="bank" src="img/Bradesco.png">
+                        </div>
+
+                        
+                   
+                </div>
+            <!--Fim da Div contacts-rodape-->
+
+            </div>
+            <!--Fim da Div mid-rodape-->
+
+            <!--Inicio da Div bottom-rodape-->
+            <div class="bottom-rodape">
+                <img src="img/IconBook.png">
+                <p>Formas de pagamento aceitas: cartões de crédito e débitos aceitos: (Inter, Nubank , Santander, Visa, B.B, Itaú, Bradesco ), Boleto e Pix.</p>
+                <div class="line-white"></div>
+                <p>© 2024 Book-Line Ltda. CNPJ 12.345.678/0001-90. Via C Dois Vila Pinheiro, 1 Maré, Rio de Janeiro RJ, 21046-385</p>
+
+            </div>
+            <!--Fin da Div bottom-rodape-->
+
+        </div>
+            <!--Fim da Div rodape-->
+
+
+</body>
+</html>

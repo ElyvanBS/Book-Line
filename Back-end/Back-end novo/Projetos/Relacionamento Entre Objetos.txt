@@ -1,0 +1,14 @@
+* Associação - Um objeto contém a referência de outro objeto. Os objetos existem de maneira independente;
+Exemplo: Produto e Fabricante. O Produto recebe uma referência de Fabricante.
+
+* Composição - Um objeto é parte de outro objeto. Existe uma relação todo/parte. O objeto "todo" é responsável pela criação e destruição do objeto "parte".
+Exemplo: Produto e Características.
+
+-Caracteristica
+A = (a0, a1, a2, ...) - vetor
+Array - Estrutura indexada. No PHP é uma estrutura heterogênea de dados.
+
+-Nome (nome da característica). Exemplo: 
+      (Peso, altura, cor, ...)
+-Valor(86kg, 1.8m, pardo, ...)
+
