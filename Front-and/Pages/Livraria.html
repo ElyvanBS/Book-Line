@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="../Javascript/scroll-top.js" defer></script>
+        <script src="../Javascript/value-filtro.js" defer></script>
+        <script src="../Javascript/heart.js" defer></script>
+
+        <link rel="stylesheet" href="../Css/style.css">
+        <link rel="stylesheet" href="../Css/livraria.css">
+
+        <title>Book-Line</title>
+    </head>
+<body>
+    <!--Inicio do Menu-->
+    <header>
+
+        <!--Inicio da section Menu-Sup-->
+        <section class="Menu-Sup">
+            <img id="Icon-site" src="../img/IconBook.png">
+
+            <!--Inicio da section Pesquisa-->
+            <section class="Pesquisa">
+
+                <!--Inicio do select Filtro-->
+                <select id="Filtro">
+                  <option value="Livro">Livros</option>
+                  <option value="Autor">Autor</option>
+                  <option value="Filtro" selected disabled>Filtrar</option>
+                </select>    
+                <!--Fim do select Filtro-->
+
+                    <input type="text">
+
+                    <!--Inicio da section pesq-->
+                    <section id="pesq">
+                    <a href="#"><img id="Lupa" src="../img/pesquisa.png"></a>
+                    </section>
+                    <!--Fim da section pesq-->
+
+            </section>
+            <!--Fim da section Pesquisa-->
+
+            <!--Inicio da div Favoritos-->
+            <div class="Favoritos">
+                <a href="#"><img src="../img/heart.png"></a>
+            </div>
+            <!--Fim da div Favoritos-->
+            <a href="#"><p id="text-fav">Meus favoritos</p></a>
+            <!--Inicio da div Usuario-->
+            <div class="Usuario">
+                <a href="#"><img src="../img/user.png"></a>
+            </div>
+            <!--Fim da div Usuario-->
+            <a href="#"><p id="text-user">Usuários</p></a>
+            <!--Inicio da div Carrinho-->
+            <div class="Cart">
+                <a href="#"><img src="../img/cart.png"></a>
+            </div>
+            <!--Fim da div Carrinho-->
+        </section>
+        <!--Fim da section Menu-Sup-->
+
+        <!--Inicio da section Options-menu-->
+        <section class="Options-menu">
+        <!--Inicio da div Menu-->
+         <div class="Menu">
+            <!--Inicio da div Menu-line-->
+            <div class="Menu-line">
+                <div id="menu-up"></div>
+                <div id="menu-mid"></div>
+                <div id="menu-inf"></div>
+            </div>
+            <!--Fim da div Menu-line-->
+            <a href="#home" id="text-menu">Menu</a> <!-- Texto do menu -->
+            </div>
+        <!--Fim da div Menu-->
+
+            <!--Inicio da lista de opções do Menu da página-->
+            <ul>
+                <li><a href="#home" id="hm" >Início</a></li>
+                <li><a href="#sobre" id="liv" >Livros</a></li>
+                <li><a href="#servicos" id="esc" >Novos Escritores</a></li>
+                <li><a href="##" id="mb" >Minha biblioteca</a></li>
+                <li><a href="##" id="pm" >Promoções</a></li>
+                <li><a href="##" id="nov" >Novidades</a></li>
+
+            </ul>
+            <!--Fim da lista de opções do Menu da página-->
+
+        </section>
+        <!--Fim da section Options-menu-->
+
+    </header>
+    <!--Fim do Menu-->
+
+    <!--Inicio do conteúdo da página web-->
+    <main>
+
+        <!--Inicio da div categoria-container-->
+        <div class="categoria-container">
+
+        <!--Inicio da section categoria-one-box-->
+        <section class="categoria-one-box">
+
+            <div class="categ-name-one" onclick="toggleContent()">
+            <h2>Preço</h2>
+            <img src="../img/Arrow-green.png">
+            </div>
+
+            <form class="value-filtro">
+                <input type="text" id="minValue" placeholder="R$Min" required>
+                <input type="text" id="maxValue" placeholder="R$Max" required>
+                <button type="button" onclick="filtrarValores()">Filtrar</button>
+              </form>
+            
+              <div class="range-slider">
+                <!-- Controle de range para o valor mínimo -->
+                <input type="range" id="minRange" min="1" max="500" step="0.5">
+                <span id="minDisplay">Min: 1</span>
+                
+                <!-- Controle de range para o valor máximo -->
+                <input type="range" id="maxRange" min="1" max="500" step="0.5">
+                <span id="maxDisplay">Max: 500</span>
+              </div>
+        </section>
+        <!--Fim da section categoria-one-box-->
+
+        <!--Inicio da section categoria-second-box-->
+        <section class="categoria-second-box">
+            <div class="categ-name-second">
+            <h2>Formato</h2>
+            <img src="../img/Arrow-green.png">
+            </div>
+            
+            <section class="filtro-formato">
+                <div class="option-format"><input type="checkbox"><label>Capa Comum</label></div>
+                <div class="option-format"><input type="checkbox"><label>Capa Dura</label></div>
+                <div class="option-format"><input type="checkbox"><label>E-book</label></div>
+                <div class="option-format"><input type="checkbox"><label>Coleções</label></div>
+
+
+            </section>
+        </section>
+        <!--Fim da section categoria-second-box-->
+
+        <!--Inicio da section categoria-three-box-->
+        <section class="categoria-three-box">
+            <div class="categ-name-theree">
+                <h2>Livros</h2>
+                <img src="../img/Arrow-green.png">
+                </div>
+
+                <section class="filtro-formato">
+                    <div class="option-format"><input type="checkbox"><label>Fantasia</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Gastronomia e Culinária</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Humor e Entretenimento</label></div>
+                    <div class="option-format"><input type="checkbox"><label>HQs, Mangás e Novels</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Autoajuda</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Administração e Economia</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Livros Infantis</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Esportes e Lazer</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Erótico</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Literatura e Ficção</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Crime, Suspense e Mistério</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Política e Ciências Sociais</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Romance</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Saúde e Família</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Religião e Espiritualidade</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Medicina Profissional</label></div>
+                    <div class="option-format"><input type="checkbox"><label>LGBTQ+</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Biografias e Casos Verdadeiros</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Computação e Informática</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Livros para Jovens </label></div>
+                    <div class="option-format"><input type="checkbox"><label>Livros de Ciências</label></div>
+                    <div class="option-format"><input type="checkbox"><label>História</label></div>
+                    <div class="option-format"><input type="checkbox"><label>Arte, Cinema e Fotografia</label></div>
+
+
+    
+                </section>
+
+        </section>
+        <!--Fim da section categoria-three-box-->
+
+        </div>
+        <!--Fim da div categoria-container-->
+
+        <!--Inicio da section container-products--> 
+        <section class="container-products">
+
+        <!--Inicio da section container-filtro--> 
+        <section class="container-filtro">
+
+        </section>
+        <!--Fim da section container-filtro--> 
+
+        <section class="box-container">
+
+            <!--Inicio da section column-box-->
+            <section class="column-box">
+
+            <!--Inicio da div box-product-->
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="../img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+
+                </div>
+                <!--Fim da div love-box-->
+
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del></del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="../img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+
+            </div>
+            <!--Fim da div box-product-->
+            
+            <!--Inicio da div box-product-->
+            <div class="box-product">
+
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-35%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="../img/Gokushufudou.png">
+                <!--Fim da img ( Capa do produto )-->
+
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+
+                </div>
+                <!--Fim da div love-box-->
+
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">Gokushufudou - Tatsu Imortal 01</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>R$ 36,90</del></h3>
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 23,98</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="../img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+
+            </div>
+            <!--Fim da div box-product-->
+
+            <!--Inicio da div box-product-->
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="../img/ÉraroMasAcontece.png">
+                <!--Fim da img ( Capa do produto )-->
+
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+
+                </div>
+                <!--Fim da div love-box-->
+
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">É Raro, Mas Acontece Muito</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del></del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 36,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="../img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+
+
+            </div>
+            <!--Fim da div box-product-->
+
+            <!--Inicio da div box-product-->
+            <div class="box-product">
+
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="../img/SegredosComédia.png">
+                <!--Fim da img ( Capa do produto )-->
+
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+
+                </div>
+                <!--Fim da div love-box-->
+
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">Segredos da comédia stand-up</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>R$ 59,90</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 44,92</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="../img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+
+            </div>
+            <!--Fim da div box-product-->
+
+
+            </section>
+            <!--Fim da section column-box-->
+
+            <!--Inicio da section column-box-->
+            <section class="column-box">
+
+            <div class="box-product">
+                <div class="promotion-box"><p>-40%</p></div>
+                <img src="../img/Reacionário.png">
+                <div class="love-box">
+                    <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                    <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+
+                </div>
+                <h1 class="title-product">O Reacionário</h1>
+                <h3><del>R$ 80,78</del></h3>
+                <h2>R$ 49,72</h2>
+
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="../img/cart-comp.png">
+                </div></a>
+
+            </div>
+            <div class="box-product">
+                <div class="promotion-box"><p>-33%</p></div>
+                <img src="../img/SeiSobreAmor.png">
+                <div class="love-box">
+                    <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                    <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+
+                </div>
+                <h1 class="title-product">Tudo o que eu sei sobre o amor</h1>
+                <h3><del>R$ 59,99</del></h3>
+                <h2>R$ 40,19</h2>
+
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="../img/cart-comp.png">
+                </div></a>
+
+            </div>
+            <div class="box-product">
+                <div class="promotion-box"><p>-13%</p></div>
+                <img src="../img/Alienista.png">
+                <div class="love-box">
+                    <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                    <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+
+                </div>
+                <h1 class="title-product">Extraordinario</h1>
+                <h3><del>R$ 29,90</del></h3>
+                <h2>R$ 25,89</h2>
+
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="../img/cart-comp.png">
+                </div></a>
+
+            </div>
+            <div class="box-product">
+                <img src="../img/AutoCompadecida.png">
+                <div class="love-box">
+                    <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                    <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+
+                </div>
+                <h1 class="title-product">Auto da Compadecida</h1>
+                <h3><del></del></h3>
+                <h2>R$ 44,92</h2>
+
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="../img/cart-comp.png">
+                </div></a>
+
+            </div>
+
+            </section>
+            <!--Fim da section column-box-->
+
+            <!--Inicio da section column-box-->
+            <section class="column-box">
+
+                <div class="box-product">
+                    <div class="promotion-box"><p>-27%</p></div>
+                    <img src="../img/SpyXFamily01.png">
+                    <div class="love-box">
+                        <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                        <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+    
+                    </div>
+                    <h1 class="title-product">Spy X Family Vol. 1</h1>
+                    <h3><del>R$ 44,90</del></h3>
+                    <h2>R$ 32,78</h2>
+    
+                    <a href="#"><div class="button-buy">
+                        ADICIONAR
+                        <img src="../img/cart-comp.png">
+                    </div></a>
+    
+                </div>
+                <div class="box-product">
+                    <img src="../img/Epaminondas.png">
+                    <div class="love-box">
+                        <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                        <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+    
+                    </div>
+                    <h1 class="title-product">Epaminondas: O gato explicador</h1>
+                    <h3><del></del></h3>
+                    <h2>R$ 45,19</h2>
+    
+                    <a href="#"><div class="button-buy">
+                        ADICIONAR
+                        <img src="../img/cart-comp.png">
+                    </div></a>
+    
+                </div>
+                <div class="box-product">
+                    <div class="promotion-box"><p>-13%</p></div>
+                    <img src="../img/AtendimentoCoracoes.png">
+                    <div class="love-box">
+                        <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                        <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+    
+                    </div>
+                    <h1 class="title-product">Serviço de atendimento...</h1>
+                    <h3><del>R$33,90</del></h3>
+                    <h2>R$ 27,10</h2>
+    
+                    <a href="#"><div class="button-buy">
+                        ADICIONAR
+                        <img src="../img/cart-comp.png">
+                    </div></a>
+    
+                </div>
+                <div class="box-product">
+                    <div class="promotion-box"><p>-24%</p></div>
+                    <img src="../img/Toradora01.png">
+                    <div class="love-box">
+                        <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                        <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+    
+                    </div>
+                    <h1 class="title-product">Toradora</h1>
+                    <h3><del>R$ 26,90</del></h3>
+                    <h2>R$ 20,36</h2>
+    
+                    <a href="#"><div class="button-buy">
+                        ADICIONAR
+                        <img src="../img/cart-comp.png">
+                    </div></a>
+    
+                </div>
+
+            </section>
+            <!--Fim da section column-box-->
+
+            <!--Inicio da section column-box-->
+            <section class="column-box">
+
+                <div class="box-product">
+                    <div class="promotion-box"><p>-26%</p></div>
+                    <img src="../img/CadeBernadette.png">
+                    <div class="love-box">
+                        <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                        <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+    
+                    </div>
+                    <h1 class="title-product">Extraordinario</h1>
+                    <h3><del>R$ 79,90</del></h3>
+                    <h2>R$ 58,84</h2>
+    
+                    <a href="#"><div class="button-buy">
+                        ADICIONAR
+                        <img src="../img/cart-comp.png">
+                    </div></a>
+    
+                </div>
+                <div class="box-product">
+                    <img src="../img/Nagatoro02.png">
+                    <div class="love-box">
+                        <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                        <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+    
+                    </div>
+                    <h1 class="title-product">Nagatoro - Vol. 2</h1>
+                    <h3><del></del></h3>
+                    <h2>R$39,90</h2>
+    
+                    <a href="#"><div class="button-buy">
+                        ADICIONAR
+                        <img src="../img/cart-comp.png">
+                    </div></a>
+    
+                </div>
+                <div class="box-product">
+                    <img src="../img/ComédiaJack.png">
+                    <div class="love-box">
+                        <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                        <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+    
+                    </div>
+                    <h1 class="title-product">A Comédia de Jack Davis</h1>
+                    <h3><del></del></h3>
+                    <h2>R$69,90</h2>
+    
+                    <a href="#"><div class="button-buy">
+                        ADICIONAR
+                        <img src="../img/cart-comp.png">
+                    </div></a>
+    
+                </div>
+                <div class="box-product">
+                    <img src="../img/Hanako.png">
+                    <div class="love-box">
+                        <img class="heart-red" src="../img/silhueta-de-formato-simples-de-coracao.png">
+                        <img class="heart-gray" src="../img/contorno-em-forma-de-coracao.png">
+    
+                    </div>
+                    <h1 class="title-product">Hanako-Kun E Os Mistérios - Vol. 1</h1>
+                    <h3><del></del></h3>
+                    <h2>R$ 37,90</h2>
+    
+                    <a href="#"><div class="button-buy">
+                        ADICIONAR
+                        <img src="../img/cart-comp.png">
+                    </div></a>
+    
+                </div>
+
+            </section>
+            <!--Fim da section column-box-->
+
+            
+            <p>Seção 1-16 de 10</p>
+        </section>
+        
+        <section class="footer-product">
+
+            <section class="buttons-box">
+            <button class="activate-button-footer">1</button>
+            <button class="button-footer">2</button>
+            <button class="button-footer">3</button>
+            </section>
+            
+            <div class="line-footer"></div>
+        </section>
+
+        </section>
+        <!--Fim da section container-products--> 
+
+    </main>
+    <!--Fim do conteúdo da página web-->
+
+
+    <!--Inicio do Rodapé da página web-->
+    <footer>
+    <!--Inicio da class footer-sup-->
+        <section class="footer-sup">
+            <div class="scroll-top">
+            Voltar ao topo
+            <img src="../img/right-arrow.png">
+            </div>
+        </section>
+    <!--Fim da class footer-sup-->
+
+    <!--Inicio da class footer-content-->
+        <section class="footer-content">
+
+            <div class="navigation-footer contat-footer">
+                <h1>Contatos</h1>
+                <div id="line-nav"></div>
+                    <a href="#"><li>Endereço: 69907-677</li></a>
+                    <a href="#"><li>Telefone: (68) 4002-0922</li></a>
+                    <a href="#"><li>E-mail: booklineofc@gmail.com</li></a>
+                </div>
+
+            <div class="navigation-footer">
+                <h1>Navegue pelo site</h1>
+                <div id="line-nav"></div>
+                    <a href="#"><li>Página inicial</li></a>
+                    <a href="#"><li>Perfil</li></a>
+                    <a href="#"><li>Meus favoritos</li></a>
+                    <a href="#"><li>Livraria</li></a>
+                    <a href="#"><li>Configurações</li></a>
+                    <a href="#"><li>Sobre nós</li></a>
+                
+            </div>
+
+            <div class="navigation-footer ajuda-footer">
+                <h1>Dúvidas/Ajudas</h1>
+                <div id="line-nav"></div>
+                <a href="#"><li>Central de Ajuda</li></a>
+                <a href="#"><li>Devoluções</li></a>
+                <a href="#"><li>Segurança e privacidade</li></a>
+                <a href="#"><li>Termos de serviço</li></a>
+                <a href="#"><li>Política de privacidade</li></a>
+                
+            </div>
+            <div class="navigation-footer redes-footer">
+                <h1>Nos siga nas redes sociais!</h1>
+                <div id="line-nav"></div>
+                <a href="#"><img src="../img/Instagram.png"></a>
+                <a href="#"><img src="../img/Facebook.png"></a>
+                <a href="#"><img src="../img/TwitterX.png"></a>
+                <a href="#"><img src="../img/TikTok.png"></a>
+            </div>
+            
+        </section>
+    <!--Fim da class footer-content-->
+
+    <!--Inicio da class footer-bottom-->
+        <section class="footer-bottom">
+            <img src="../img/IconBook.png">
+            Formas de pagamento aceitas:  cartões de crédito e débitos aceitos: (Inter,  
+                Nubank , Santander,  Visa,  B.B,  Itaú, Bradesco ), Boleto e Pix.
+                <div id="line-bottom"></div>
+            © 2024 Book-Line Ltda. CNPJ 12.345.678/0001-90. Via C Dois Vila Pinheiro, 
+                1 - Maré, Rio de Janeiro - RJ, 21046-385
+        </section>
+    <!--Fim da class footer-bottom-->
+
+    </footer>
+    <!--Fim do Rodapé da página web-->
+
+</body>
+</html>

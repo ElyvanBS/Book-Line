@@ -1,6 +1,6 @@
 .container{
     width: 100vw;
-    height: 950px;
+    height: 1010px;
     margin: 0; /* Remove as margens padrão */
     padding: 0; /* Remove os preenchimentos padrão */
     box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
@@ -12,7 +12,7 @@
     background-color: rgba(0, 0, 0, 0.50);
     border: 5px solid white;
     width: 1300px;
-    height: 700px;
+    height: 950px;
     border-radius: 20px;
     margin-top: 35px;
 }
@@ -21,8 +21,26 @@
     margin-top: 10px;
 }
 .login-page{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    border: none;
+    width: 180px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
     margin-top: 25px;
-    margin-left: 350px;
+    margin-left: 340px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cadastro-page{
+    margin-top: 25px;
+    margin-left: 50px;
     background-color: rgba(255, 255, 255, 0);
     width: 180px;
     height: 50px;
@@ -34,27 +52,8 @@
     font-size: 20px;
     letter-spacing: 3px;
     display: flex;
-    justify-content: center;
+    text-align: center;
     align-items: center;
-}
-.cadastro-page{
-    background-color: white;
-    color: black;
-    border-radius: 30px;
-    border: none;
-    width: 180px;
-    height: 50px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    margin-top: 25px;
-    margin-left: 0px;
-    font-size: 18px;
-    letter-spacing: 3px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
 }
 
 #form-cadast > input{
@@ -169,7 +168,7 @@
     transition: 1s ease;
 }
 .type-box:hover{
-    border: 2px solid rgb(43, 43, 43);
+    border: 2px solid rgb(27, 27, 27);
     background-color: rgb(202, 202, 202);
 }
 
@@ -235,11 +234,11 @@
         display: none;
     }
     .container{
-        height: 720px;
+        height: 1000px;
     }
     .cadastro-box{
         width: 620px;
-        height: 660px;
+        height: 930px;
     }
     .login-page{
         width: 160px;
@@ -271,11 +270,11 @@
         display: none;
     }
     .container{
-        height: 700px;
+        height: 970px;
     }
     .cadastro-box{
         width: 420px;
-        height: 640px;
+        height: 910px;
     }
     .text-sup{
         margin-left: 50px;
@@ -310,11 +309,11 @@
         display: none;
     }
     .container{
-        height: 705px;
+        height: 970px;
     }
     .cadastro-box{
         width: 380px;
-        height: 640px;
+        height: 910px;
     }
     .text-sup{
         margin-left: 25px;
@@ -360,16 +359,16 @@
         margin-top: -20px;
     }
     .container{
-        height: 620px;
+        height: 880px;
     }
     }
     @media (max-width: 320px) {
         .cadastro-box{
             transform: scale(0.8);
-            margin-top: -50px;
+            margin-top: -70px;
         }
         .container{
-            height: 550px;
+            height: 780px;
         }
 }
 

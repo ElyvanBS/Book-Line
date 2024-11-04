@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="Front-and/Javascript/script.js" defer></script>
+    <script src="Front-and/Javascript/scroll-top.js" defer></script>
+    <script src="Front-and/Javascript/slide-products.js" defer></script>
+
+    <link rel="stylesheet" href="Front-and/Css/style.css">
+
+    <title>Book-Line</title>
+</head>
+<body>
+    <!--Inicio do Menu-->
+    <header>
+
+        <!--Inicio da section Menu-Sup-->
+        <section class="Menu-Sup">
+            <img id="Icon-site" src="Front-and/img/IconBook.png">
+
+            <!--Inicio da section Pesquisa-->
+            <section class="Pesquisa">
+
+                <!--Inicio do select Filtro-->
+                <select id="Filtro">
+                  <option value="Livro">Livros</option>
+                  <option value="Autor">Autor</option>
+                  <option value="Filtro" selected disabled>Filtrar</option>
+                </select>    
+                <!--Fim do select Filtro-->
+
+                    <input type="text">
+
+                    <!--Inicio da section pesq-->
+                    <section id="pesq">
+                    <a href="#"><img id="Lupa" src="Front-and/img/pesquisa.png"></a>
+                    </section>
+                    <!--Fim da section pesq-->
+
+            </section>
+            <!--Fim da section Pesquisa-->
+
+            <!--Inicio da div Favoritos-->
+            <div class="Favoritos">
+                <a href="#"><img src="Front-and/img/heart.png"></a>
+            </div>
+            <!--Fim da div Favoritos-->
+            <a href="#"><p id="text-fav">Meus favoritos</p></a>
+            <!--Inicio da div Usuario-->
+            <div class="Usuario">
+                <a href="#"><img src="Front-and/img/user.png"></a>
+            </div>
+            <!--Fim da div Usuario-->
+            <a href="#"><p id="text-user">Usuários</p></a>
+            <!--Inicio da div Carrinho-->
+            <div class="Cart">
+                <a href="#"><img src="Front-and/img/cart.png"></a>
+            </div>
+            <!--Fim da div Carrinho-->
+        </section>
+        <!--Fim da section Menu-Sup-->
+
+        <!--Inicio da section Options-menu-->
+        <section class="Options-menu">
+        <!--Inicio da div Menu-->
+         <div class="Menu">
+            <!--Inicio da div Menu-line-->
+            <div class="Menu-line">
+                <div id="menu-up"></div>
+                <div id="menu-mid"></div>
+                <div id="menu-inf"></div>
+            </div>
+            <!--Fim da div Menu-line-->
+            <a href="#home" id="text-menu">Menu</a> <!-- Texto do menu -->
+            </div>
+        <!--Fim da div Menu-->
+
+            <!--Inicio da lista de opções do Menu da página-->
+            <ul>
+                <li><a href="#home" id="hm" >Início</a></li>
+                <li><a href="#sobre" id="liv" >Livros</a></li>
+                <li><a href="#servicos" id="esc" >Novos Escritores</a></li>
+                <li><a href="##" id="mb" >Minha biblioteca</a></li>
+                <li><a href="##" id="pm" >Promoções</a></li>
+                <li><a href="##" id="nov" >Novidades</a></li>
+
+            </ul>
+            <!--Fim da lista de opções do Menu da página-->
+
+        </section>
+        <!--Fim da section Options-menu-->
+
+    </header>
+    <!--Fim do Menu-->
+
+    <!--Inicio do conteúdo da página web-->
+    <main>
+        <!--Inicio do Slideshow container-->
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <a href="#"><img src="Front-and/img/slider01.jpg" style="width:100%"></a>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <a href="#"><img src="Front-and/img/slider02.jpg" style="width:100%" ></a>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <a href="#"><img src="Front-and/img/slider03.jpg" style="width:100%"></a>
+    </div>
+  
+    <!--Botões de retornar e passar o próximo slide-->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="nav-dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </div>
+        <!--Fim do Slideshow container-->
+
+    <!--Inicio da section navigation-page-->
+    <section class="navigation-page">
+
+        <!--Inicio da div Assinatura-ass-->
+        <a id="ass-href" href="#"><div id="option-nav-ass">
+
+            <img id="Icon-Assinatura" src="Front-and/img/Icon-Assinatura.png">
+            <!--Inicio da div line-nav-->
+            <div class="line-nav"></div>
+            <!--Fim da div line-nav-->
+            <h3>Assinatura</h3>
+            <p>Faça agora e obtenha benefícios!</p>
+        </div></a>
+        <!--Fim da div option-nav-ass-->
+
+        <!--Inicio da div option-nav-liv-->
+        <a id="liv-href" href="#"><div id="option-nav-liv">
+
+            <img id="Icon-Livraria" src="Front-and/img/Icon-livraria.png">
+            <!--Inicio da div line-nav-->
+            <div class="line-nav"></div>
+            <!--Fim da div line-nav-->
+            <h3>Livraria</h3>
+            <p>Veja os livros ofertados por nossa plataforma!</p>
+        </div></a>
+        <!--Fim da div option-nav-liv-->
+
+        <!--Inicio da div option-nav-com-->
+        <a id="com-href" href="#"><div id="option-nav-com">
+
+            <img id="Icon-Compras" src="Front-and/img/Icon-Compras.png">
+            <!--Inicio da div line-nav-->
+            <div class="line-nav"></div>
+            <!--Fim da div line-nav-->
+            <h3>Compras</h3>
+            <p>Veja a situação de suas compras!</p>
+        </div></a>
+        <!--Fim da div option-nav-com-->
+
+        <!--Inicio da div option-nav-per-->
+        <a id="per-href" href="#"><div id="option-nav-per">
+
+            <img id="Icon-Perfil" src="Front-and/img/Icon-Perfil.png">
+            <!--Inicio da div line-nav-->
+            <div class="line-nav"></div>
+            <!--Fim da div line-nav-->
+            <h3>Perfil</h3>
+            <p>Crie, edite e personalize para ganhar benefícios!</p>
+        </div></a>
+        <!--Fim da div option-nav-per-->
+
+    </section>
+    <!--Fim da section navigation-page-->
+    <section class="line-green"></section>
+
+
+    <div id="division-product">Livros mais Vendidos</div>
+    <!-- Abertura da DIV carrosel-produtos -->
+
+    <div class="section-indicator" id="section-indicator">Seção 01 - 02</div>
+
+        <div class="carousel-container">
+            <button class="prev1" >❮</button>
+            <div class="carousel">
+          
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+        </div>
+
+
+        <button class="next1">❯</button>
+      </div>
+
+      
+      
+      <div id="division-product">Vistos recentemente</div>
+
+      <section class="container-recent">
+      </section>
+
+      <section class="line-green"></section>
+
+      <div id="division-product">Livros em Promoção</div>
+
+    
+    <div class="section-indicator" id="section-indicator2">Seção 01 - 02</div>
+
+        <div class="carousel-container">
+            <button class="prev2" >❮</button>
+            <div class="carousel2">
+          
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+        </div>
+
+
+        <button class="next2">❯</button>
+      </div>
+    
+      <div id="division-product">Livros de novos escritores</div>
+
+      <div class="section-indicator" id="section-indicator3">Seção 01 - 02</div>
+
+        <div class="carousel-container">
+            <button class="prev3" >❮</button>
+            <div class="carousel3">
+          
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/DiarioChaves.png">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+            <div class="box-product">
+
+                <!--Inicio da img ( Capa do produto )-->
+                <img src="Front-and/img/Extraordinario.jpg">
+                <!--Fim da img ( Capa do produto )-->
+                <!--Inicio da div promotion-box ( Porcentagem da promoção )-->
+                <div class="promotion-box"><p>-25%</p></div>
+                <!--Fim da div promotion-box ( Porcentagem da promoção )-->
+                <!--Inicio da div love-box-->
+                <div class="love-box">
+        
+                    
+                    <!--Imagem do coração vermelho de favoritar-->
+                    <img class="heart-red" src="Front-and/img/silhueta-de-formato-simples-de-coracao.png">
+        
+                    <!--Imagem do formato de coração cinza para favoritar-->
+                    <img class="heart-gray" src="Front-and/img/contorno-em-forma-de-coracao.png">
+        
+                </div>
+                <!--Fim da div love-box-->
+        
+                <!--Inicio do h1 title-product ( nome do produto )-->
+                <h1 class="title-product">O Diário do Chaves</h1>
+                <!--Fim do h1 title-product ( nome do produto )-->
+                
+                <!--Inicio do h3 ( valor anterior a promoção )-->
+                <h3><del>ADa</del></h3>
+                <!--Fim do h3 ( valor anterior a promoção )-->
+        
+                <!--Inicio do h2 ( Valor atual produto )-->
+                <h2>R$ 45,90</h2>
+                <!--Fim do h2 ( Valor atual produto )-->
+        
+                <!--Inicio da div button-buy ( botão para adicionar ao carrinho )-->
+                <a href="#"><div class="button-buy">
+                    ADICIONAR
+                    <img src="Front-and/img/cart-comp.png">
+                </div></a>
+                <!--Fim da div button-buy ( botão para adicionar ao carrinho )-->
+        
+            </div>
+        </div>
+
+        <button class="next3">❯</button>
+      </div>
+
+      <section class="container-assinatura">
+        <a href="#"><img src="Front-and/img/Assinatura.png"></a>
+        <div class="box-assinatura">
+ <h1>Faça a sua <strong class="h1-especial">assinatura</strong> e ganhe os 
+                <strong class="h1-especial">melhores</strong> e diversos 
+                <strong class="h1-especial">benefícios!</strong></h1>
+            <div class="p-assinatura"><img src="Front-and/img/Soma-green.png"><p>Promoções especiais;</p></div>
+            <div class="p-assinatura"><img src="Front-and/img/Soma-green.png"><p>Itens da comunidade;</p></div>
+            <div class="p-assinatura"><img src="Front-and/img/Soma-green.png"><p>Produtos gratuitos mensais;</p></div>
+            <div class="p-assinatura"><img src="Front-and/img/Soma-green.png"><p>Entre muitas outras coisas!</p></div>
+            <a href="#"><button class="button-assinatura">Saiba mais</button></a>
+        </div>
+      </section>
+
+      <section class="line-green"></section>
+
+      <div class="container-conjuntos"></div>
+    </main>
+    <!--Fim do conteúdo da página web-->
+
+    <!--Inicio do Rodapé da página web-->
+    <footer>
+        <!--Inicio da class footer-sup-->
+            <section class="footer-sup">
+                <div class="scroll-top">
+                Voltar ao topo
+                <img src="Front-and/img/right-arrow.png">
+                </div>
+            </section>
+        <!--Fim da class footer-sup-->
+    
+        <!--Inicio da class footer-content-->
+            <section class="footer-content">
+    
+                <div class="navigation-footer contat-footer">
+                    <h1>Contatos</h1>
+                    <div id="line-nav"></div>
+                        <a href="#"><li>Endereço: 69907-677</li></a>
+                        <a href="#"><li>Telefone: (68) 4002-0922</li></a>
+                        <a href="#"><li>E-mail: booklineofc@gmail.com</li></a>
+                    </div>
+    
+                <div class="navigation-footer">
+                    <h1>Navegue pelo site</h1>
+                    <div id="line-nav"></div>
+                        <a href="#"><li>Página inicial</li></a>
+                        <a href="#"><li>Perfil</li></a>
+                        <a href="#"><li>Meus favoritos</li></a>
+                        <a href="#"><li>Livraria</li></a>
+                        <a href="#"><li>Configurações</li></a>
+                        <a href="#"><li>Sobre nós</li></a>
+                    
+                </div>
+    
+                <div class="navigation-footer ajuda-footer">
+                    <h1>Dúvidas/Ajudas</h1>
+                    <div id="line-nav"></div>
+                    <a href="#"><li>Central de Ajuda</li></a>
+                    <a href="#"><li>Devoluções</li></a>
+                    <a href="#"><li>Segurança e privacidade</li></a>
+                    <a href="#"><li>Termos de serviço</li></a>
+                    <a href="#"><li>Política de privacidade</li></a>
+                    
+                </div>
+                <div class="navigation-footer redes-footer">
+                    <h1>Nos siga nas redes sociais!</h1>
+                    <div id="line-nav"></div>
+                    <a href="#"><img src="Front-and/img/Instagram.png"></a>
+                    <a href="#"><img src="Front-and/img/Facebook.png"></a>
+                    <a href="#"><img src="Front-and/img/TwitterX.png"></a>
+                    <a href="#"><img src="Front-and/img/TikTok.png"></a>
+                </div>
+                
+            </section>
+        <!--Fim da class footer-content-->
+    
+        <!--Inicio da class footer-bottom-->
+            <section class="footer-bottom">
+                <img src="Front-and/img/IconBook.png">
+                Formas de pagamento aceitas:  cartões de crédito e débitos aceitos: (Inter,  
+                    Nubank , Santander,  Visa,  B.B,  Itaú, Bradesco ), Boleto e Pix.
+                    <div id="line-bottom"></div>
+                © 2024 Book-Line Ltda. CNPJ 12.345.678/0001-90. Via C Dois Vila Pinheiro, 
+                    1 - Maré, Rio de Janeiro - RJ, 21046-385
+            </section>
+        <!--Fim da class footer-bottom-->
+    
+        </footer>
+        <!--Fim do Rodapé da página web-->
+</body>
+</html>

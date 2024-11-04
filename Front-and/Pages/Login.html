@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="../Javascript/script.js" defer></script>
+        <script src="../Javascript/scroll-top.js" defer></script>
+        <link rel="stylesheet" href="../Css/style.css">
+        <link rel="stylesheet" href="../Css/login.css">
+
+        <title>Book-Line</title>
+    </head>
+<body>
+    <!--Inicio do Menu-->
+    <header>
+
+        <!--Inicio da section Menu-Sup-->
+        <section class="Menu-Sup">
+            <img id="Icon-site" src="../img/IconBook.png">
+
+            <!--Inicio da section Pesquisa-->
+            <section class="Pesquisa">
+
+                <!--Inicio do select Filtro-->
+                <select id="Filtro">
+                  <option value="Livro">Livros</option>
+                  <option value="Autor">Autor</option>
+                  <option value="Filtro" selected disabled>Filtrar</option>
+                </select>    
+                <!--Fim do select Filtro-->
+
+                    <input type="text">
+
+                    <!--Inicio da section pesq-->
+                    <section id="pesq">
+                    <a href="#"><img id="Lupa" src="../img/pesquisa.png"></a>
+                    </section>
+                    <!--Fim da section pesq-->
+
+            </section>
+            <!--Fim da section Pesquisa-->
+
+            <!--Inicio da div Favoritos-->
+            <div class="Favoritos">
+                <a href="#"><img src="../img/heart.png"></a>
+            </div>
+            <!--Fim da div Favoritos-->
+            <a href="#"><p id="text-fav">Meus favoritos</p></a>
+            <!--Inicio da div Usuario-->
+            <div class="Usuario">
+                <a href="#"><img src="../img/user.png"></a>
+            </div>
+            <!--Fim da div Usuario-->
+            <a href="#"><p id="text-user">Usuários</p></a>
+            <!--Inicio da div Carrinho-->
+            <div class="Cart">
+                <a href="#"><img src="../img/cart.png"></a>
+            </div>
+            <!--Fim da div Carrinho-->
+        </section>
+        <!--Fim da section Menu-Sup-->
+
+        <!--Inicio da section Options-menu-->
+        <section class="Options-menu">
+        <!--Inicio da div Menu-->
+         <div class="Menu">
+            <!--Inicio da div Menu-line-->
+            <div class="Menu-line">
+                <div id="menu-up"></div>
+                <div id="menu-mid"></div>
+                <div id="menu-inf"></div>
+            </div>
+            <!--Fim da div Menu-line-->
+            <a href="#home" id="text-menu">Menu</a> <!-- Texto do menu -->
+            </div>
+        <!--Fim da div Menu-->
+
+            <!--Inicio da lista de opções do Menu da página-->
+            <ul>
+                <li><a href="#home" id="hm" >Início</a></li>
+                <li><a href="#sobre" id="liv" >Livros</a></li>
+                <li><a href="#servicos" id="esc" >Novos Escritores</a></li>
+                <li><a href="##" id="mb" >Minha biblioteca</a></li>
+                <li><a href="##" id="pm" >Promoções</a></li>
+                <li><a href="##" id="nov" >Novidades</a></li>
+
+            </ul>
+            <!--Fim da lista de opções do Menu da página-->
+
+        </section>
+        <!--Fim da section Options-menu-->
+
+    </header>
+    <!--Fim do Menu-->
+
+    <!--Inicio do conteúdo da página web-->
+    <main>
+
+            <!--Inicio da div container-->
+            <div class="container">
+
+            <!--Inicio da section cadastro-box-->
+            <section class="cadastro-box">
+
+                <section class="text-sup">
+                <img class="img-form" src="../img/login-man.png">
+                <h1>Não tenho uma Conta!</h1>
+                <a href="cadastro.html"><h2>Criar uma agora</h2></a>
+
+                <a href="Login.html"><div class="login-page">Login</div></a>
+                <a href="cadastro.html"><div class="cadastro-page">Cadastro</div></a>
+                </section>
+
+                <section class="form-container">
+                <form id="form-cadast" action="cadastrarContato.php" method="get">
+                    <h3><p>Olá,</p><p>Seja Bem Vindo!</p></h3>
+
+                <!-- Nome -->
+                <input type="text" placeholder="Nome ou E-mail:" id="nome" name="nome-login" required><br><br>
+              
+                <!-- Senha -->
+                <input type="password" placeholder="Senha:" id="senha" name="senha-login" minlength="6" required><br><br>
+              
+                <!-- Botão de envio -->
+                <button type="submit">Entrar na conta</button>
+
+                <section class="form-bottom">
+                <div class="line-white"></div>Se preferir<div class="line-white"></div>             
+                </section>
+
+                <section class="type-container">
+                
+                <a href="#">
+                <div class="type-box">
+                    <img src="../img/Google.png">
+                </div></a>
+
+                <a href="#">
+                <div class="type-box">
+                    <img src="../img/Facebook-cadast.png">
+                </div></a>
+
+                <a href="#">
+                <div class="type-box">
+                    <img src="../img/TwitterX-cadast.png">
+                </div></a>
+                </section>
+              </form>
+            </section>
+
+            </section>
+            <!--Fim da section cadastro-box-->
+
+            </div>
+            <!--Fim da div container-->
+        
+    </main>
+    <!--Fim do conteúdo da página web-->
+
+
+    <!--Inicio do Rodapé da página web-->
+    <footer>
+    <!--Inicio da class footer-sup-->
+        <section class="footer-sup">
+            <div class="scroll-top">
+            Voltar ao topo
+            <img src="../img/right-arrow.png">
+            </div>
+        </section>
+    <!--Fim da class footer-sup-->
+
+    <!--Inicio da class footer-content-->
+        <section class="footer-content">
+
+            <div class="navigation-footer contat-footer">
+                <h1>Contatos</h1>
+                <div id="line-nav"></div>
+                    <a href="#"><li>Endereço: 69907-677</li></a>
+                    <a href="#"><li>Telefone: (68) 4002-0922</li></a>
+                    <a href="#"><li>E-mail: booklineofc@gmail.com</li></a>
+                </div>
+
+            <div class="navigation-footer">
+                <h1>Navegue pelo site</h1>
+                <div id="line-nav"></div>
+                    <a href="#"><li>Página inicial</li></a>
+                    <a href="#"><li>Perfil</li></a>
+                    <a href="#"><li>Meus favoritos</li></a>
+                    <a href="#"><li>Livraria</li></a>
+                    <a href="#"><li>Configurações</li></a>
+                    <a href="#"><li>Sobre nós</li></a>
+                
+            </div>
+
+            <div class="navigation-footer ajuda-footer">
+                <h1>Dúvidas/Ajudas</h1>
+                <div id="line-nav"></div>
+                <a href="#"><li>Central de Ajuda</li></a>
+                <a href="#"><li>Devoluções</li></a>
+                <a href="#"><li>Segurança e privacidade</li></a>
+                <a href="#"><li>Termos de serviço</li></a>
+                <a href="#"><li>Política de privacidade</li></a>
+                
+            </div>
+            <div class="navigation-footer redes-footer">
+                <h1>Nos siga nas redes sociais!</h1>
+                <div id="line-nav"></div>
+                <a href="#"><img src="../img/Instagram.png"></a>
+                <a href="#"><img src="../img/Facebook.png"></a>
+                <a href="#"><img src="../img/TwitterX.png"></a>
+                <a href="#"><img src="../img/TikTok.png"></a>
+            </div>
+            
+        </section>
+    <!--Fim da class footer-content-->
+
+    <!--Inicio da class footer-bottom-->
+        <section class="footer-bottom">
+            <img src="../img/IconBook.png">
+            Formas de pagamento aceitas:  cartões de crédito e débitos aceitos: (Inter,  
+                Nubank , Santander,  Visa,  B.B,  Itaú, Bradesco ), Boleto e Pix.
+                <div id="line-bottom"></div>
+            © 2024 Book-Line Ltda. CNPJ 12.345.678/0001-90. Via C Dois Vila Pinheiro, 
+                1 - Maré, Rio de Janeiro - RJ, 21046-385
+        </section>
+    <!--Fim da class footer-bottom-->
+
+    </footer>
+    <!--Fim do Rodapé da página web-->
+
+</body>
+</html>
