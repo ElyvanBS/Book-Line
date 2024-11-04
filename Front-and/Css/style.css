@@ -44,12 +44,22 @@ body{
     gap: 40px;
   }
 
-  
-  
+  .carousel4 {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 40px;
+  }
+  .carousel5 {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 40px;
+  }
   
 button.prev1, button.next1,
 button.prev2, button.next2,
-button.prev3, button.next3 {
+button.prev3, button.next3,
+button.prev4, button.next4,
+button.prev5, button.next5 {
     background-color: rgba(11, 190, 11, 0.9);
     color: white;
     border-radius: 10px;
@@ -66,17 +76,21 @@ button.prev3, button.next3 {
 }
 
 button.prev1,button.prev2,
-button.prev3 {
+button.prev3, button.prev4,
+button.prev5 {
     left: 0px; /* Distância do botão para o lado esquerdo */
 }
 
 button.next1,button.next2,
-button.next3{
+button.next3,button.next4,
+button.next5{
     right: 22px; /* Distância do botão para o lado direito */
 }
   button.prev1:hover, button.next1:hover,
   button.prev2:hover, button.next2:hover,
-  button.prev3:hover, button.next3:hover{
+  button.prev3:hover, button.next3:hover,
+  button.prev4:hover, button.next4:hover,
+  button.prev5:hover, button.next5:hover{
     background-color: rgba(8, 121, 8, 0.9);
 
   }
@@ -962,11 +976,143 @@ input[type="radio"]:checked + label {
 
 }
 .container-conjuntos{
-    height: 1000px;
-    width: 1200px;
+    height: 1100px;
+    width: 1250px;
     background-color: white;
     border-radius: 10px;
     margin: 20px auto 20px auto;
+    padding: 10px    ;
+}
+.container-conjuntos > h1{
+    color: black;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.column-conjunto{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.conjunto{
+    border: 1px solid gray;
+}
+.button-conjunto{
+    height: 80px;
+    width: 780px;
+    border-radius: 20px;
+    background-color:rgb(18, 199, 18);
+    color: white;
+    font-weight: 600;
+    font-family: Arial;
+    cursor: pointer;
+    font-size: 15pt;
+    letter-spacing: 3px;
+    display: flex;
+    margin: 10px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s ease;
+}
+.button-conjunto:hover{
+    background-color: rgb(11, 153, 11);
+}
+
+.container-colecao{
+    height: 1100px;
+    width: 1250px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto 20px auto;
+    padding: 10px    ;
+}
+.container-colecao > h1{
+    color: black;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.box-colecoes{
+    height: 450px;
+    width: 360px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+.box-colecoes > h1{
+    color:#1d1f1d;
+    margin: 0;
+    font-size: 28pt;
+}
+.box-colecoes > h3{
+    margin: 0;
+    font-family: Arial;
+    font-size: 15pt;
+    text-align: center;
+    margin-top: 65px;
+    letter-spacing: 2px;
+    color: gray;
+}
+.box-colecoes > p{
+    font-family: Arial;
+    font-size: 12pt;
+    letter-spacing: 2px;
+    position: absolute;
+    margin-top: 355px;
+    margin-left: -80px;
+}
+.button-colecao{
+    background-color: #00D053;
+    border-radius: 10px;
+    width: 300px;
+    height: 45px;
+    margin-top: 25px;
+    font-weight: 500;
+    color: white;
+    font-size: 18pt;
+    font-family: Arial;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.button-colecao:hover{
+    background-color: #029c40;
+}
+.button-colecao > img{
+    height: 29px;
+    width: 29px;
+}
+.column-colecao{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+.box-colecoes > img{
+    height: 220px;
+    
+}
+.title-colecao{
+    font-size: 20px;
+    font-family: Arial;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 230px;
+    position: absolute;
+    
 }
 @media (max-width: 2540px) {
     .Menu-Sup{

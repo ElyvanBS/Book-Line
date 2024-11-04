@@ -50,3 +50,5 @@ class Carousel {
 const carousel1 = new Carousel('.carousel', 'button.prev1', 'button.next1', '#section-indicator');
 const carousel2 = new Carousel('.carousel2', 'button.prev2', 'button.next2', '#section-indicator2');
 const carousel3 = new Carousel('.carousel3', 'button.prev3', 'button.next3', '#section-indicator3');
+const carousel4 = new Carousel('.carousel4', 'button.prev4', 'button.next4', '#section-indicator4');
+const carousel5 = new Carousel('.carousel5', 'button.prev5', 'button.next5', '#section-indicator5');
